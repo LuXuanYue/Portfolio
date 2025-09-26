@@ -764,10 +764,36 @@ section {
     border: 1px solid var(--border-color);
 }
 
+.contact-item:nth-child(1) {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-color: #2196f3;
+}
+
+.contact-item:nth-child(2) {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    border-color: #9c27b0;
+}
+
+.contact-item:nth-child(3) {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-color: #4caf50;
+}
+
 .contact-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--accent-pink);
+}
+
+.contact-item:nth-child(1):hover {
+    border-color: #2196f3;
+}
+
+.contact-item:nth-child(2):hover {
+    border-color: #9c27b0;
+}
+
+.contact-item:nth-child(3):hover {
+    border-color: #4caf50;
 }
 
 .contact-icon {
@@ -783,9 +809,32 @@ section {
     transition: var(--transition);
 }
 
+.contact-item:nth-child(1) .contact-icon {
+    background: linear-gradient(135deg, #2196f3, #1976d2);
+}
+
+.contact-item:nth-child(2) .contact-icon {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+.contact-item:nth-child(3) .contact-icon {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
 .contact-item:hover .contact-icon {
-    background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
     transform: scale(1.1) rotate(5deg);
+}
+
+.contact-item:nth-child(1):hover .contact-icon {
+    background: linear-gradient(135deg, #2196f3, #1976d2);
+}
+
+.contact-item:nth-child(2):hover .contact-icon {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+.contact-item:nth-child(3):hover .contact-icon {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
 }
 
 .contact-text h3 {
@@ -798,6 +847,18 @@ section {
 
 .contact-item:hover .contact-text h3 {
     color: var(--accent-pink);
+}
+
+.contact-item:nth-child(1):hover .contact-text h3 {
+    color: #2196f3;
+}
+
+.contact-item:nth-child(2):hover .contact-text h3 {
+    color: #9c27b0;
+}
+
+.contact-item:nth-child(3):hover .contact-text h3 {
+    color: #4caf50;
 }
 
 .contact-text p {
